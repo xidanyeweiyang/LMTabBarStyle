@@ -4,4 +4,4 @@
 * B:带弹出菜单的 
 * C:带折叠效果的
 
-![https://github.com/xidanyeweiyang/LMTabBarStyle/blob/master/三种tabBar.gif]()
+![LMTabBarStyles](https://github.com/xidanyeweiyang/LMTabBarStyle/blob/master/三种tabBar.gif)
