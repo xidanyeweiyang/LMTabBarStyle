@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hi4-gT-0JG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LMTabBarStyles-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htl-1y-lO2">
+                                <rect key="frame" x="66" y="164" width="243" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.67931908219213644" blue="0.35174918645717801" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="带突出按钮的tabbar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickLMTarBarStyleFirst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iU4-tX-uZK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb8-RU-jF5">
+                                <rect key="frame" x="66" y="278" width="243" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.67931908220000004" blue="0.35174918649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="带动画的tabbar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickLMTarBarStyleSencond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxO-vg-RAH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuN-yQ-lb3">
+                                <rect key="frame" x="66" y="392" width="243" height="34"/>
+                                <color key="backgroundColor" red="1" green="0.67931908220000004" blue="0.35174918649999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="折叠的tabbar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didClickLMTarBarStyleThird:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFC-XM-YFS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rb8-RU-jF5" firstAttribute="centerX" secondItem="htl-1y-lO2" secondAttribute="centerX" id="0CT-up-q03"/>
+                            <constraint firstItem="htl-1y-lO2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="3yt-jV-Xoe"/>
+                            <constraint firstItem="yuN-yQ-lb3" firstAttribute="centerX" secondItem="Rb8-RU-jF5" secondAttribute="centerX" id="AA9-WV-9b8"/>
+                            <constraint firstItem="yuN-yQ-lb3" firstAttribute="top" secondItem="Rb8-RU-jF5" secondAttribute="bottom" constant="80" id="AWa-e6-r5j"/>
+                            <constraint firstItem="Rb8-RU-jF5" firstAttribute="width" secondItem="htl-1y-lO2" secondAttribute="width" id="DAF-vA-fdM"/>
+                            <constraint firstItem="yuN-yQ-lb3" firstAttribute="width" secondItem="Rb8-RU-jF5" secondAttribute="width" id="ZnK-LD-6Pj"/>
+                            <constraint firstItem="htl-1y-lO2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzS-bx-xTa"/>
+                            <constraint firstItem="htl-1y-lO2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="xaA-y6-avk"/>
+                            <constraint firstItem="Rb8-RU-jF5" firstAttribute="top" secondItem="htl-1y-lO2" secondAttribute="bottom" constant="80" id="xp2-mj-IYk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LMTabBarStyles" id="X2e-om-kUP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="154"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oEg-sh-vVS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hi4-gT-0JG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWo-2s-fuj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hUx-Bs-M5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y35-lv-Dnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="154"/>
+        </scene>
+    </scenes>
+</document>
